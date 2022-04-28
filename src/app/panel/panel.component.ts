@@ -10,7 +10,7 @@ export class PanelComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    // this should remain
+    // this should remain as it is
   }
 
 }
