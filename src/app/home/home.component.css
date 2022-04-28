@@ -1,0 +1,72 @@
+.outerDiv{
+    width:100vw;
+    height:90vh;
+    display: inline-flex;
+}
+
+.pane{
+    width:25vw;
+    height:100vh;
+    border:1px solid black;
+}
+
+.tab{
+    width:25vw;
+    height:15vh;
+    border: 1px solid black;
+}
+
+.content{
+    width:75vw;
+    height: 20vh;
+    padding:10vw;
+    display: inline-flex;
+    border-bottom: 1 px solid black;
+}
+
+input{
+    width:40vw;
+    height:5vh;
+}
+
+.custom {
+    width:10vw;
+}
+
+.listDiv{
+    height:60vh;
+    overflow-y: scroll;
+}
+
+.modalDiv{
+    width:50vw;
+    height:50vh;
+    margin-top:10vh;
+    margin-left:10vw;
+    border:2px solid black;
+}
+
+.timerDiv{
+    width:20vw;
+    height:5vh;
+    border:1px solid black;
+    padding-top:10px;
+    padding-left:20px;
+    display: inline-flex;
+    border:1px solid black;
+}
+
+.card{
+    width:60vw;
+    height:20vh;
+    margin-top:5vh;
+}
+
+.line{
+    display:inline-flex;
+}
+
+.startBtn{
+    margin-left:2vw;
+    
+}

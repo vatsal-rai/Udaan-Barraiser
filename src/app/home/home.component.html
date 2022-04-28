@@ -1,0 +1,40 @@
+<div class="outerDiv" *ngIf="!modal" >
+    <div class="pane">
+        <div class="tab">Dashboard</div>
+        <div class="tab">Create</div>
+    </div>
+
+    <div>
+    <div class="content">
+    
+        <div class="inpField"><input type="text" [(ngModel)]="text"></div>
+        <div class="startBtn"><button class="btn btn-primary" (click)="startTimer()" *ngIf="showStart">Start</button></div>
+        <div class="startBtn"><button class="btn btn-danger" (click)="stopTimer()" *ngIf="!showStart">Stop</button></div>
+        <div class="timerDiv">{{counterHours}} : {{counterMin}} : {{counterSec < 9? '0'+counterSec: counterSec}}</div>
+    </div>
+    <div class="listDiv">
+        <div class="card" *ngFor="let item of list">
+            <div class="card-header">Project</div>
+            <div class="card-body">{{item.title}} {{item.duration}} <span *ngIf="item.proj && item.proj.length>0">
+                <span *ngFor="let p of item.proj">{{p.title}}</span></span></div>
+            <div class="line">
+            <button class="btn btn-danger custom" (click)="delete(item)">Delete</button>
+            <button class="btn btn-success custom" (click)="addProj(item)">AddProj</button>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+
+
+
+    
+</div>
+
+<div *ngIf="modal" class="modalDiv">
+    <input type="text" [(ngModel)]="projTitle">
+    <button class="btn btn-primary" (click)="add()">Create</button>
+</div>
+
+
+
