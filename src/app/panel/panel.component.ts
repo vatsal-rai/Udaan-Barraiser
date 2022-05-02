@@ -11,6 +11,7 @@ export class PanelComponent implements OnInit {
 
   ngOnInit(): void {
     console.log("test stuff");
+    //no msg
   }
 
 }
